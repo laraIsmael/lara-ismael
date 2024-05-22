@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <h1>Coming soon!</h1>
+      <h1 className="font-display flex justify-center pt-10">Coming soon!</h1>
     </>
   )
 }
