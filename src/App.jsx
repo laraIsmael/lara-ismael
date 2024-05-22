@@ -4,6 +4,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <h1>Coming soon!</h1>
     </>
   )
 }
