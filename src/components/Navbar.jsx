@@ -11,17 +11,15 @@ export default function Navbar() {
     {name: 'Contact', link:'/contact'},
   ]
   let [isOpen, setIsOpen] = useState(false);
+  let [showTooltip, setShowTooltip] = useState(false)
   return (
     <div className="font-display sticky w-full shadow-md">
       <div className="md-px-10 py-2 px-4 md:flex justify-between items-center bg-white">
         {/* logo */}
         <div className="flex text2x1 cursor-pointer items-center">
-          <Link data-tooltip-target="tooltip-default" to='/'><img className="hover:brightness-95" src="/logo.png" alt="home"/></Link>
-          <div id="tooltip-default" role="tooltip" className="absolute z-10 invisible inline-block px-3 py-2 text-sm font-medium text-white transition-opacity duration-300 bg-gray-900 rounded-lg shadow-sm opacity-0 tooltip dark:bg-gray-700">
-            Home
-          <div className="tooltip-arrow" data-popper-arrow></div>
-</div>
-        </div>
+          <Link onMouseOver={() => setShowTooltip(true)} onMouseOut={() => setShowTooltip(false)} to='/'><img className="hover:brightness-95" src="/logo.png" alt="home"/></Link>
+          { showTooltip && <p className="mt-6 ml-2 text-lime-900 text-xs">Home</p> }
+        </div>  
         {/* menu icon */}
         <div onClick={() => setIsOpen(!isOpen)} className='w-7 h-7 absolute right-8 top-4 cursor-pointer md:hidden'>
           {
