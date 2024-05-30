@@ -1,4 +1,5 @@
 export default function NavNet() {
+
   return (
     <>
       <div className="flex flex-col font-display px-12 pt-10 bg-sky-400">
@@ -16,7 +17,7 @@ export default function NavNet() {
         </div>
       </div>
 
-      <div className="flex py-12 px-12 flex-row justify-left"> 
+      <div className="flex py-14 px-10 flex-row justify-left"> 
         <img src="./NavNet-img/navnet_screen_view.webp" className="w-3/5" alt="Navnet" />
         <div className="flex flex-col p-6 self-left items-start">
           <p className="text-sky-900 text-lg font-light">
@@ -59,7 +60,7 @@ export default function NavNet() {
       </div>
 
       <div className="flex flex-col font-display px-12 pt-10 bg-sky-900">
-        <p className="text-sky-50 text-6xl pb-10 self-center font-normal">
+        <p className="text-sky-50 text-6xl p-10 self-center font-normal">
           Project Overview
         </p>
         <div className="flex flex-row items-center pb-5"> 
@@ -114,7 +115,8 @@ export default function NavNet() {
       </div>
 
       <div className="flex flex-col font-display px-12 pt-10 bg-sky-50">
-        <div className="flex flex-row items-center">
+
+        <div className="flex flex-row p-8 items-center">
           <div className="flex flex-col items-center pb-8">
             <p className="text-sky-900 text-6xl pb-12 self-center font-normal">
               Discovery
@@ -124,6 +126,7 @@ export default function NavNet() {
             </p>
           </div>
         </div>
+
         <div className="flex flex-col items-center py-5"> 
           <div className="flex flex-row items-left pb-10 w-full">
             <p className="text-sky-900 text-3xl w-1/3 font-normal">
@@ -223,87 +226,185 @@ export default function NavNet() {
             </div>
           </div>
         </div> 
+
       </div>
 
-        <div className="flex flex-col font-display px-14 py-10">
-          <div className="flex flex-row self-center">
-              <p className="text-sky-900 text-6xl pb-8 self-center font-normal">
-                Define
-              </p>
-          </div>
+      <div className="flex flex-col font-display px-14 py-10 bg-slate-100	">
 
-          <div className="flex flex-col items-center  mb-10"> 
-            <div className="flex flex-row items-left pb-10 w-full">
-              <p className="text-sky-900 text-3xl w-1/3 font-normal">
-              Empathizing with the user
-              </p>
-              <div className="flex flex-col w-4/5">
-                <p className="text-sky-900 text-md pb-8 font-light">
-                With the information from the interviews, I started narrowing down the scope of the project, creating a user Persona. That ensured that further design decisions stayed user-centric. 
-                </p>
-
-              <div className="flex flex-row pl-10 items-center gap-6">
-                <img src="./NavNet-img/persona_navnet.png"/>
-                </div> 
-              </div> 
-            </div>
-          </div> 
-
-          <div className="flex flex-col items-center  mb-10"> 
-            <div className="flex flex-row items-left pb-10 w-full">
-              <p className="text-sky-900 text-3xl w-1/3 font-normal">
-              User Flow Diagram
-              </p>
-              <div className="flex flex-col w-4/5">
-                <p className="text-sky-900 text-md pb-8 font-light">
-                I mapped out the path(s) the user can take, in order to complete tasks to achieve their goal. This step helped me keep the design user-centered, by showing me what pages will be needed in the website from the perspective of my user persona. 
-                </p>
-
-              <div className="flex flex-row pl-10 items-center gap-6">
-                <img src="./NavNet-img/navnet_user_flow.webp"/>
-                </div> 
-              </div> 
-            </div>
-          </div> 
-
-          <div className="flex flex-col items-center  mb-10"> 
-            <div className="flex flex-row items-left pb-10 w-full">
-              <p className="text-sky-900 text-3xl w-1/3 font-normal">
-                Information Architecture
-              </p>
-              <div className="flex flex-col w-4/5">
-                <p className="text-sky-900 text-md pb-8 font-light">
-                  By analyzing the data from the Competitive Analysis and the user paths displayed in the User Flow, I held a brainstorming session with the client to map out and list the content that is needed on new the website. 
-                  <br/>
-                  We categorized the content and organized it hierarchically, determining the website menus and page labels. This allowed me to create the initial version of the Sitemap. 
-                </p>
-
-              <div className="flex flex-row pl-10 items-center gap-6">
-                <img src="./NavNet-img/navnet_map_site.webp"/>
-                </div> 
-              </div> 
-            </div>
-          </div> 
-
-          <div className="flex flex-col items-center mb-10"> 
-            <div className="flex flex-row items-left pb-10 w-full">
-              <p className="text-sky-900 text-3xl w-1/3 font-normal">
-                Ideation
-              </p>
-              <div className="flex flex-col w-4/5">
-                <p className="text-sky-900 text-md pb-8 font-light">
-                  My ideation process started with website sketches and low-fidelity wireframes. This was essential to validate the new website structure and user flows with the client. 
-                  <br/>
-                  Once the new website structure and usability were approved, I worked on the visual design, building high-fidelity wireframes to present to the client, and validating the new UI with two of NavNet’s clients through a video call.  
-                </p>
-                <div className="flex flex-row items-center gap-6">
-                  <img className="w-2/4" src="./NavNet-img/low.webp"/>
-                  <img className="w-2/4" src="./NavNet-img/high.webp"/>
-                </div> 
-              </div> 
-            </div>
-          </div> 
+        <div className="flex flex-row p-8 self-center">
+            <p className="text-sky-900 text-6xl pb-8 self-center font-normal">
+              Define
+            </p>
         </div>
+
+        <div className="flex flex-col items-center  mb-10"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+            <p className="text-sky-900 text-3xl w-1/3 font-normal">
+            Empathizing with the user
+            </p>
+            <div className="flex flex-col w-4/5">
+              <p className="text-sky-900 text-md pb-8 font-light">
+              With the information from the interviews, I started narrowing down the scope of the project, creating a user Persona. That ensured that further design decisions stayed user-centric. 
+              </p>
+
+            <div className="flex flex-row pl-10 items-center gap-6">
+              <img src="./NavNet-img/persona_navnet.png"/>
+              </div> 
+            </div> 
+          </div>
+        </div> 
+
+        <div className="flex flex-col items-center  mb-10"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+            <p className="text-sky-900 text-3xl w-1/3 font-normal">
+            User Flow Diagram
+            </p>
+            <div className="flex flex-col w-4/5">
+              <p className="text-sky-900 text-md pb-8 font-light">
+              I mapped out the path(s) the user can take, in order to complete tasks to achieve their goal. This step helped me keep the design user-centered, by showing me what pages will be needed in the website from the perspective of my user persona. 
+              </p>
+
+            <div className="flex flex-row pl-10 items-center gap-6">
+              <img src="./NavNet-img/navnet_user_flow.webp"/>
+              </div> 
+            </div> 
+          </div>
+        </div> 
+
+        <div className="flex flex-col items-center  mb-10"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+            <p className="text-sky-900 text-3xl w-1/3 font-normal">
+              Information Architecture
+            </p>
+            <div className="flex flex-col w-4/5">
+              <p className="text-sky-900 text-md pb-8 font-light">
+                By analyzing the data from the Competitive Analysis and the user paths displayed in the User Flow, I held a brainstorming session with the client to map out and list the content that is needed on new the website. 
+                <br/>
+                We categorized the content and organized it hierarchically, determining the website menus and page labels. This allowed me to create the initial version of the Sitemap. 
+              </p>
+            <div className="flex flex-row pl-10 items-center gap-6">
+              <img src="./NavNet-img/navnet_map_site.webp"/>
+              </div> 
+            </div> 
+          </div>
+        </div> 
+
+      </div>  
+
+      <div className="flex flex-col font-display px-14 py-10">
+        <div className="flex flex-row p-8 self-center">
+          <p className="text-sky-900 text-6xl pb-8 self-center font-normal">
+            Develop
+          </p>
+        </div>
+        <div className="flex flex-col items-center mb-10"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+            <p className="text-sky-900 text-3xl w-1/3 font-normal">
+              Ideation
+            </p>
+            <div className="flex flex-col w-4/5">
+              <p className="text-sky-900 text-md pb-8 font-light">
+                My ideation process started with website sketches and low-fidelity wireframes. This was essential to validate the new website structure and user flows with the client. 
+                <br/>
+                Once the new website structure and usability were approved, I worked on the visual design, building high-fidelity wireframes to present to the client, and validating the new UI with two of NavNet’s clients through a video call.  
+              </p>
+              <div className="flex flex-row items-center gap-6">
+                <img className="w-2/4" src="./NavNet-img/low.webp"/>
+                <img className="w-2/4" src="./NavNet-img/high.webp"/>
+              </div> 
+            </div> 
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center py-5"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+            <p className="text-sky-900 text-3xl w-1/3 font-normal">
+              Usability Test
+            </p>
+            <div className="w-2/3">
+              <p className="text-sky-900 text-md pb-12 font-light">
+              The usability test was performed remotely with individual video calls with each participant, three in total. The participants were given three different scenarios, each with a task to complete. I synthesized the responses and observations in a report. All participants were able to complete all tasks; however, they experienced some navigation difficulties when accessing the website from cellphones.
+              <br/>
+              Based on these results, I made changes to the mobile version to improve usability and access to information.           
+              </p>
+              <div className="flex flex-col items-left p-8 bg-sky-700">
+                <p className="text-sky-50 text-lg pb-2 pr-2 font-light">
+                  Usability Test Objectives
+                </p>
+                <p className="text-sky-50 text-md pb-2 pr-2 font-light">
+                  <strong>Test website navigation</strong><br/>
+                  How easy/hard is it for users to navigate through different pages on the website?
+                  Is it easy for the users to find the information they are looking for?
+                  <br/>
+                  <br/>
+                  <strong>Measure content approachability</strong><br/>
+                  Are users able to find information about services in a friendly and easy-to-understand language?
+                  <br/>
+                  <br/>
+                  <strong>Test call to action functionality</strong><br/>
+                  Is it easy for users to request free consultancy?
+                  Is it easy for users to place an order? Is it easy for users to get in contact with NavNet?    
+                </p>
+              </div>  
+            </div>
+          </div>
+        </div> 
+
+      </div>
+
+      <div className="flex flex-col font-display px-14 py-10 bg-slate-100	">
+
+        <div className="flex flex-row p-8 self-center">
+            <p className="text-sky-900 text-6xl pb-8 self-center font-normal">
+              Deliver
+            </p>
+        </div>
+
+        <div className="flex flex-col items-center  mb-10"> 
+          <div className="flex flex-row items-left pb-10 w-full">
+
+            <div className="flex flex-col items-left pb-10">
+              <p className="text-sky-900 text-3xl w-1/3 font-normal">
+                <strong>Website</strong>
+                <br/>
+                Deployment & launching
+              </p>
+              <a href="https://navigatornetworks.com/" target="_blank" className="w-fit mt-16 py-2 px-3 bg-sky-700 text-white font-semibold rounded-full shadow-md hover:bg-sky-800 focus:outline-none">
+                SEE LIVE WEBSITE
+              </a>
+            </div>  
+
+            <div className="flex flex-col w-4/5">
+              <p className="text-sky-900 text-md pb-8 font-light">
+                Upon approval of the final product, I performed the following functions to launch the website:
+                <br/>
+                <br/>
+                «» Website compression and optimization.
+                <br/>
+                <br/>
+                «» Configuring the DNS and web server for upload.
+                <br/>
+                <br/>
+                «» Adding meta tags for SEO and indexing the website at Google Search Console.
+                <br/>
+                <br/>
+                «» Validating website performance with PageSpeed Insights.
+                <br/>
+                <br/>
+                «» Installing the website SSL certificate.
+                <br/>
+                <br/>
+                «» Thoroughly testing and verifying all website functionality.
+ 
+              </p>
+
+            <div className="flex flex-row pt-8 pl-10 items-center gap-6">
+              <img src="./NavNet-img/mockup_navnet.webp"/>
+              </div> 
+            </div> 
+          </div>
+        </div> 
+      </div>
     </>
   )
 }
