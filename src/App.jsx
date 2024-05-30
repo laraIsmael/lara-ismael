@@ -6,18 +6,21 @@ import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Jewelry from './components/Jewelry'
 import Contact from './components/Contact'
+import NavNet from './components/NavNet'
+
 
 export default function App() {
   return (
     <>
       <Navbar />
         <Routes>
-          <Route path="/"  element={<Home />} />
-          <Route path="/About"  element={<About/>} />
-          <Route path="/Projects"  element={<Projects/>} />
-          <Route path="/Resume"  element={<Resume/>} />
-          <Route path="/Jewelry"  element={<Jewelry />} />
-          <Route path="/Contact"  element={<Contact/>} />
+          <Route path="/" element={<Home />} />
+          <Route path="/About" element={<About/>} />
+          <Route path="/Projects" element={<Projects/>} />
+          <Route path="/Resume" element={<Resume/>} />
+          <Route path="/Jewelry" element={<Jewelry />} />
+          <Route path="/Contact" element={<Contact/>} />
+          <Route path="/NavNet" element={<NavNet/>} />
         </Routes>
     </>
   )
