@@ -6,7 +6,9 @@ import Projects from './components/Projects'
 import Resume from './components/Resume'
 import Jewelry from './components/Jewelry'
 import Contact from './components/Contact'
-import NavNet from './components/NavNet'
+import NavNet from './components/projects/NavNet'
+import MuNa from './components/projects/MuNa'
+import BdP from './components/projects/BdP'
 
 
 export default function App() {
@@ -21,6 +23,8 @@ export default function App() {
           <Route path="/Jewelry" element={<Jewelry />} />
           <Route path="/Contact" element={<Contact/>} />
           <Route path="/NavNet" element={<NavNet/>} />
+          <Route path="/MuNa" element={<MuNa/>} />
+          <Route path="/BdP" element={<BdP/>} />
         </Routes>
     </>
   )
