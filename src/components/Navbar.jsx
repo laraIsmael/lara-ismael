@@ -13,7 +13,7 @@ export default function Navbar() {
   let [isOpen, setIsOpen] = useState(false);
   let [showTooltip, setShowTooltip] = useState(false)
   return (
-    <div className="font-display sticky w-full shadow-md">
+    <div className="font-display sticky top-0 w-full shadow-md">
       <div className="md-px-10 py-2 px-4 md:flex justify-between items-center bg-white">
         {/* logo */}
         <div className="flex text2x1 cursor-pointer items-center">
